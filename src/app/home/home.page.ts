@@ -27,6 +27,7 @@ import { ApiResult, GameResult } from '../services/interfaces';
 import { finalize, catchError} from 'rxjs';
 import { RouterLinkWithHref } from '@angular/router';
 import { DatePipe } from '@angular/common';
+import { Browser } from '@capacitor/browser';
 
 
 @Component({
@@ -77,7 +78,13 @@ export class HomePage {
       },
     });
 
-     
+    
+
+  }
+
+  browserSearch(){
+
+    //Browser.open
 
   }
 
