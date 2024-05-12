@@ -16,8 +16,8 @@ export class GameService {
 
   constructor() { }
 
-  getTopGames(page = 1): Observable<any> {
-    return this.httpClient.get<any>("https://api.rawg.io/api/games?key=b4abdff1bda64f898a54686eb99ca861&page=1");
+  getTopGames(page = 1): Observable<ApiResult> {
+    return this.httpClient.get<ApiResult>("https://api.rawg.io/api/games?key=b4abdff1bda64f898a54686eb99ca861&page=1");
   }
 
   getTest(): Observable<any> {

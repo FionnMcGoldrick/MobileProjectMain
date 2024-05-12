@@ -56,7 +56,8 @@ import { DatePipe } from '@angular/common';
     IonIcon,
     IonCard,
     IonPopover,
-    IonText,],
+    IonText,
+    RouterLinkWithHref],
 })
 export class HomePage {
 
@@ -76,12 +77,7 @@ export class HomePage {
       },
     });
 
-    this.gameService.getTest()
-    .subscribe({
-      next: (res) => {
-        console.log(res);
-      },
-    });
+     
 
   }
 
