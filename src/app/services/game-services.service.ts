@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
-import { ApiResult } from './interfaces';
+import { ApiResult, GameResult } from './interfaces';
 
 const BASE_URL = 'https://api.rawg.io/api/';
 const API_KEY = environment.apiKey;
@@ -18,6 +18,10 @@ export class GameService {
 
   getTopGames(page = 1): Observable<ApiResult> {
     return this.httpClient.get<ApiResult>("https://api.rawg.io/api/platforms?key=b4abdff1bda64f898a54686eb99ca861");
+  }
+
+  getTest(): Observable<any> {
+    return this.httpClient.get<any>("https://api.rawg.io/api/games?key=b4abdff1bda64f898a54686eb99ca861&dates=2019-09-01,2019-09-30&platforms=18,1,7");
   }
 
  

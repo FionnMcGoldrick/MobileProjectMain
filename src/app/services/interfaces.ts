@@ -4,10 +4,10 @@ export interface ApiResult {
   count: number;
   next: string;
   previous: null;
-  results: Result[];
+  results: GameResult[];
 }
 
-interface Result {
+export interface GameResult {
   id: number;
   name: string;
   slug: string;
