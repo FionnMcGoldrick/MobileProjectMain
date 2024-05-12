@@ -60,7 +60,7 @@ import { Browser } from '@capacitor/browser';
     IonText,
     RouterLinkWithHref],
 })
-export class HomePage {
+export class GameDetailsPage {
 
   constructor() {}
 
