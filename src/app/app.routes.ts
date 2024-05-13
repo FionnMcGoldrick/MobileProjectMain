@@ -11,10 +11,6 @@ export const routes: Routes = [ // Defining an array of route objects
     pathMatch: 'full', // Matching the full path
   },
   {
-    path: 'page1', // Path for Page1
-    loadComponent: () => import('./page1/page1.page').then((m) => m.Page1Page), // Lazy loading the Page1Page component
-  },
-  {
     path: 'page2', // Path for Page2
     loadComponent: () => import('./page2/page2.page').then((m) => m.Page2Page), // Lazy loading the Page2Page component
   },
