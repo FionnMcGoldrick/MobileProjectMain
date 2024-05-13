@@ -31,9 +31,9 @@ import { Browser } from '@capacitor/browser';
 
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-game-details',
+  templateUrl: 'game-details.page.html',
+  styleUrls: ['game-details.page.scss'],
   standalone: true,
   imports: [IonHeader,
     IonToolbar,
@@ -78,7 +78,7 @@ export class GameDetailsPage {
       },
     });
 
-    this.gameService.getGame()
+    this.gameService.getGame('')
     .subscribe({
       next: (res) => {
         console.log(res);

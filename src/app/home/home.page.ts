@@ -78,7 +78,7 @@ export class HomePage {
       },
     });
 
-    this.gameService.getGame()
+    this.gameService.getGame('')
     .subscribe({
       next: (res) => {
         console.log(res);
@@ -87,7 +87,7 @@ export class HomePage {
 
   }
 
-  
+
 
 
 }

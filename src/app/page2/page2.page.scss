@@ -1,5 +1,42 @@
-p{
-    font-size: 20px;
-    line-break: normal;
-    letter-spacing: 0.2cap;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+p {
+    margin-bottom: 20px;
+}
+.mission {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+.community {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }

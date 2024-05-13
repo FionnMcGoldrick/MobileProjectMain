@@ -35,7 +35,7 @@
   </ion-toolbar>
 
   @for (item of games; track item.id) {
-    <ion-item>
+    <ion-item [routerLink]="['/game-details', item.id]">
       <ion-avatar class="image">
         <img [src]="item.background_image" alt="poster">
       </ion-avatar>
